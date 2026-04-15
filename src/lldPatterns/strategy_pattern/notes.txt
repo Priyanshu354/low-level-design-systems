@@ -1,0 +1,51 @@
+🚀 STRATEGY PATTERN — INTERVIEW NOTES (REFINED)
+
+🔹 What is Strategy Pattern?
+
+“Strategy pattern is a behavioral design pattern that defines a family of algorithms,
+encapsulates each one into separate classes, and makes them interchangeable at runtime.”
+
+👉 In simple words:
+- You have multiple ways to do the same task
+- Instead of writing if-else, you:
+  - Create separate classes for each behavior
+  - Use a common interface
+  - Select behavior dynamically
+
+🔧 Structure:
+- Strategy Interface → defines common behavior
+- Concrete Strategies → different implementations
+- Context Class → uses strategy
+
+🧠 Example:
+
+Instead of:
+
+if(type == "sms") { ... }
+else if(type == "email") { ... }
+
+👉 You do:
+- SMSNotification implements Notification
+- EmailNotification implements Notification
+- Inject at runtime
+
+🔹 Why is it used?
+- To eliminate if-else / switch-case
+- To make behavior pluggable
+- To support runtime decision making
+
+🔹 Pros ✅
+- Clean code (no conditionals)
+- Easy to extend
+- Follows Open/Closed Principle
+- Runtime flexibility
+
+🔹 Cons ❌
+- Too many classes
+- Overkill for simple logic
+- Slight complexity increase
+
+🔹 When NOT to use 🚫
+- Only 1–2 conditions
+- No future extension needed
+- Static / fixed logic

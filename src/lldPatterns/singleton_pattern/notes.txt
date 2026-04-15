@@ -1,0 +1,54 @@
+🚀 SINGLETON PATTERN — INTERVIEW NOTES (REFINED)
+
+🔹 What is Singleton Pattern?
+
+“Singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global access point to it.”
+
+👉 In simple words:
+- Only ONE object should exist in the entire application
+- Instead of creating multiple objects, you:
+  - Restrict object creation
+  - Provide a single shared instance
+  - Access it globally
+
+🔧 Structure:
+- Private static instance → stores single object
+- Private constructor → prevents external creation
+- Public static method (getInstance) → returns the instance
+
+🧠 Example:
+
+Instead of:
+
+DatabaseConnection db1 = new DatabaseConnection();
+DatabaseConnection db2 = new DatabaseConnection();
+
+👉 You do:
+
+DatabaseConnection db1 = DatabaseConnection.getInstance();
+DatabaseConnection db2 = DatabaseConnection.getInstance();
+
+👉 Both db1 and db2 point to SAME object
+
+🔹 Why is it used?
+- To avoid multiple object creation
+- To maintain shared state
+- To manage resources efficiently (DB connection, logger)
+
+🔹 Pros ✅
+- Saves memory (single instance)
+- Ensures consistent state across system
+- Provides global access point
+- Useful for shared resources
+
+🔹 Cons ❌
+- Difficult to test (global state)
+- Can cause tight coupling
+- Not thread-safe by default
+- Becomes bottleneck in high concurrency
+
+🔹 When NOT to use 🚫
+- When multiple instances are needed
+- In high-scale systems (use connection pooling instead)
+- When testability is important
+- When object holds state that should not be shared

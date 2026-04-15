@@ -1,0 +1,53 @@
+🚀 FACTORY PATTERN — INTERVIEW NOTES (REFINED)
+
+🔹 What is Factory Pattern?
+
+“Factory pattern is a creational design pattern that encapsulates object creation logic and provides a method to create objects without exposing instantiation details.”
+
+👉 In simple words:
+- Instead of using "new" everywhere, you:
+  - Centralize object creation in one place
+  - Let factory decide which object to create
+  - Return object based on input/type
+
+🔧 Structure:
+- Product Interface → common interface (e.g., Notification)
+- Concrete Classes → implementations (SMS, Email, Push)
+- Factory Class → creates and returns objects
+
+🧠 Example:
+
+Instead of:
+
+if(type == "sms") { new SMSNotification(); }
+else if(type == "email") { new EmailNotification(); }
+
+👉 You do:
+
+Notification notif = NotificationFactory.createNotification(type);
+
+👉 Factory decides which object to create
+
+🔹 Why is it used?
+- To remove object creation logic from business code
+- To avoid using "new" everywhere
+- To centralize creation logic
+- To improve maintainability
+
+🔹 Pros ✅
+- Clean separation of concerns
+- Centralized object creation
+- Easy to extend (add new type in factory)
+- Reduces code duplication
+
+🔹 Cons ❌
+- Still may use if-else inside factory
+- Adds extra layer of abstraction
+- Factory class can become large
+- Slight overhead for small systems
+
+🔹 When NOT to use 🚫
+- When object creation is simple
+- When only 1–2 object types exist
+- When no future extension is expected
+- Overkill for small applications
