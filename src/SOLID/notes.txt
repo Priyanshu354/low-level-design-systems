@@ -1,0 +1,118 @@
+🚀 SOLID PRINCIPLES — INTERVIEW NOTES (REFINED)
+
+🔹 What is SOLID?
+
+“SOLID is a set of 5 object-oriented design principles that help developers write clean, maintainable, scalable, and extensible code.”
+
+The 5 principles are:
+
+S → Single Responsibility Principle
+O → Open Closed Principle
+L → Liskov Substitution Principle
+I → Interface Segregation Principle
+D → Dependency Inversion Principle
+
+--------------------------------------------------
+
+🔥 Why SOLID is Used?
+
+- To write clean architecture
+- To reduce tight coupling
+- To improve scalability
+- To make code easy to test
+- To improve maintainability
+- To avoid fragile codebases
+- To make systems extensible
+
+--------------------------------------------------
+
+✅ Pros of SOLID
+
+- Cleaner code structure
+- Better maintainability
+- Easier testing
+- Flexible architecture
+- Easier scalability
+- Reduced code duplication
+- Easier feature extension
+
+--------------------------------------------------
+
+❌ Cons of SOLID
+
+- Adds abstraction layers
+- More interfaces/classes
+- Slightly complex for beginners
+- Can become over-engineered
+- Not needed for tiny applications
+
+--------------------------------------------------
+
+🚫 When NOT to Use SOLID
+
+- Very small scripts
+- One-time prototype projects
+- Tiny applications with no scaling
+- Competitive programming
+- Extremely simple CRUD apps
+
+--------------------------------------------------
+
+🧠 EASY WAY TO REMEMBER SOLID
+
+S → One class = One responsibility
+O → Open for extension, closed for modification
+L → Child should replace parent safely
+I → Do not force unused methods
+D → Depend on abstraction, not concrete class
+
+==================================================
+S → SINGLE RESPONSIBILITY PRINCIPLE (SRP)
+==================================================
+
+📌 Definition:
+“A class should have only ONE reason to change.”
+
+👉 One class = One responsibility
+
+==================================================
+O → OPEN CLOSED PRINCIPLE (OCP)
+==================================================
+
+📌 Definition:
+“Software entities should be OPEN for extension but CLOSED for modification.”
+
+👉 Add new behavior WITHOUT changing old code.
+
+==================================================
+L → LISKOV SUBSTITUTION PRINCIPLE (LSP)
+==================================================
+
+📌 Definition:
+“Child classes should be able to replace parent classes without breaking behavior.”
+
+👉 Subclass should behave properly like parent.
+
+==================================================
+I → INTERFACE SEGREGATION PRINCIPLE (ISP)
+==================================================
+
+📌 Definition:
+“Clients should not be forced to implement methods they do not use.”
+
+👉 Small interfaces are better than huge interfaces.
+
+==================================================
+D → DEPENDENCY INVERSION PRINCIPLE (DIP)
+==================================================
+
+📌 Definition:
+“High-level modules should not depend on low-level modules. Both should depend on abstractions.”
+
+👉 Depend on interface, not implementation.
+
+==================================================
+
+🎯 INTERVIEW ONE-LINER
+
+“SOLID principles help us build scalable, loosely coupled, maintainable, and extensible systems by following proper object-oriented design practices.”
