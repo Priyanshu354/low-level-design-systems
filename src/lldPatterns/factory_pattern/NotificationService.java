@@ -104,6 +104,13 @@ class NotificationService {
         // Strategy executes behavior
         notification.send(message);
     }
+
+//    if (type == "email") {
+//        Notification notification = new EmailNotification();
+//        notification.send("without factory");
+//    }
+
+//    if (type == "sms") new smsNotitication
 }
 
 

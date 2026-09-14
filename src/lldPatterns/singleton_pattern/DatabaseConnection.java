@@ -43,6 +43,11 @@ class UserServiceWithoutSingleton {
         DatabaseConnectionWithoutSingleton db = new DatabaseConnectionWithoutSingleton();
         db.query("SELECT * FROM users");
     }
+
+    public void getUserById() {
+        DatabaseConnectionWithoutSingleton db = new DatabaseConnectionWithoutSingleton();
+        db.query("SELECT user FROM users WHERE user_id = 1");
+    }
 }
 
 
